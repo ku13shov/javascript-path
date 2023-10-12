@@ -12,11 +12,14 @@ const toggleClassActive = (element) => {
 selectCurrent.addEventListener('click', () => {
     toggleClassActive(selectItems);
     toggleClassActive(selectArrow);
+
+    selectCurrent.classList.toggle('border');
 });
 
 selectItems.addEventListener('click', (e) => {
     toggleClassActive(selectItems);
     toggleClassActive(selectArrow);
+    selectCurrent.classList.toggle('border');
 
     selectCurrentText.textContent = e.target.textContent;
     selectCurrent.classList.add('active');
@@ -33,7 +36,7 @@ const swiper = new Swiper('.swiper', {
     },
 
     breakpoints: {
-        320: {
+        300: {
             slidesPerView: 1,
             spaceBetween: 20,
         },
