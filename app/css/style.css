@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Consolas";
-  src: url("fonts/consolas.ttf") format("ttf");
+  src: url("../fonts/consolas.ttf") format("truetype");
 }
 @font-face {
   font-family: "Helvetica";
-  src: url("fonts/Helvetica.ttf") format("ttf");
+  src: url("../fonts/Helvetica.ttf") format("truetype");
 }
 @font-face {
   font-family: "OpenSans-Italic";
-  src: url("fonts/OpenSans-Italic.ttf") format("ttf");
+  src: url("../fonts/OpenSans-Italic.ttf") format("truetype");
 }
 @font-face {
   font-family: "Merriweather";
-  src: url("fonts/Merriweather-Regular.ttf") format("ttf");
+  src: url("../fonts/Merriweather-Regular.ttf") format("truetype");
 }
 html {
   -webkit-box-sizing: border-box;
@@ -196,7 +196,6 @@ body {
   color: #1a1a1a;
   font-family: "OpenSans-Italic", sans-serif;
   font-size: 18px;
-  font-style: italic;
   font-weight: 400;
   line-height: 24px;
 }
@@ -291,6 +290,9 @@ body {
 .rating__stars input:checked ~ label:before {
   content: url("../images/star-yellow.svg");
 }
+.rating__stars label {
+  cursor: pointer;
+}
 .rating__stars label:before {
   content: url("../images/star-grey.svg");
 }
@@ -362,6 +364,7 @@ body {
   border-radius: 2px;
   border: none;
   cursor: pointer;
+  text-transform: uppercase;
 }
 .rating__select {
   max-width: 226px;
