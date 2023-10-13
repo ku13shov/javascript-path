@@ -493,6 +493,8 @@ body {
     }
 
     .jspath {
+        padding-top: 40px;
+
         &__inner {
             justify-content: center;
             margin-bottom: 40px;
@@ -502,6 +504,7 @@ body {
             font-size: 23px;
             line-height: 25px;
             flex: 0 0 190px;
+            text-shadow: none;
         }
 
         &__line {
@@ -617,6 +620,11 @@ body {
     .rating {
         &__title {
             margin-bottom: 15px;
+
+            &.second-title {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
         }
 
         &__stars {
@@ -636,6 +644,10 @@ body {
 
             &-textarea {
                 margin-bottom: 10px;
+            }
+
+            &-submit {
+                max-width: 300px;
             }
         }
 

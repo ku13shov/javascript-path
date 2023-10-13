@@ -487,6 +487,9 @@ body {
     font-weight: 700;
     line-height: 36px;
   }
+  .jspath {
+    padding-top: 40px;
+  }
   .jspath__inner {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -499,6 +502,7 @@ body {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 190px;
     flex: 0 0 190px;
+    text-shadow: none;
   }
   .jspath__line {
     max-width: 30px;
@@ -591,6 +595,10 @@ body {
   .rating__title {
     margin-bottom: 15px;
   }
+  .rating__title.second-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
   .rating__stars {
     margin-bottom: 20px;
   }
@@ -605,6 +613,9 @@ body {
   }
   .rating__form-textarea {
     margin-bottom: 10px;
+  }
+  .rating__form-submit {
+    max-width: 300px;
   }
   .rating__select {
     max-width: 100%;
